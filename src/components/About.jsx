@@ -8,7 +8,7 @@ export default function About() {
         <h1 className="text-xl min-w-fit">About Me</h1>
         <div className="border-t-2 w-full h-1"></div>
       </div>
-      <div className="flex flex-col mx-10 border-t-2 px-4 mb-20 border-green-500 h-full pt-5 backdrop-blur-xl bg-black/20">
+      <div className="flex flex-col mx-10 border-t-2 sm:px-4 mb-20 border-green-500 h-full pt-5 backdrop-blur-xl bg-black/20">
         <div className="flex flex-col items-center sm:items-start justify-center sm:justify-start text-center sm:text-left sm:flex-row gap-4 mb-4">
           <div className="overflow-hidden w-20">
             <img
