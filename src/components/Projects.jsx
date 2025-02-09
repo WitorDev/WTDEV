@@ -155,8 +155,8 @@ export default function Projects() {
       </div>
       <div className="absolute w-1/2 left-0 top-[175vh] -z-10">
               <img className='w-full h-full object-cover' src={projectImage} alt="Hero Image" />
-              <div className="backdrop-blur-xs absolute inset-0 bg-gradient-to-r from-transparent to-black"></div>
-              <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black"></div>
+              <div className="backdrop-blur-xs absolute inset-0 bg-gradient-to-r from-transparent to-midnight"></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-midnight via-transparent to-midnight"></div>
       </div>
     </section>
   );

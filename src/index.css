@@ -1,13 +1,11 @@
 @import "tailwindcss";
 
+@theme {
+  --color-midnight: #000502;
+}
 body{
-  background-color: black;
+  background-color: #000502;
   color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   overflow-x: hidden;
 }
-.active {
-  color: black;
-  background-color: white;
-}
-
