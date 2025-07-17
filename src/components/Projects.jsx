@@ -11,9 +11,11 @@ import {
 import {
   SiApifox,
   SiCss3,
+  SiEjs,
   SiExpress,
   SiFramer,
   SiGimp,
+  SiGodotengine,
   SiHtml5,
   SiIcon,
   SiJavascript,
@@ -23,44 +25,7 @@ import {
   SiReact,
   SiTailwindcss,
 } from "react-icons/si";
-const projects = [
-  {
-    title: "Todo App",
-    description: "A simple and efficient task manager built with React.",
-    tech: ["Javascript", "HTML", "CSS", "React", "Tailwind"],
-    image: "https://picsum.photos/400/250?random=1",
-    link: "#",
-    repo: "https://github.com/username/todo-app",
-    date: "2023-01-01",
-  },
-  {
-    title: "Portfolio Website",
-    description: "A personal portfolio showcasing projects and skills.",
-    tech: ["Javascript", "HTML", "CSS", "React", "Tailwind", "Framer Motion"],
-    image: "https://picsum.photos/400/250?random=2",
-    link: "#",
-    repo: "https://github.com/username/portfolio-website",
-    date: "2023-02-01",
-  },
-  {
-    title: "Weather App",
-    description: "A real-time weather app using OpenWeather API.",
-    tech: ["Javascript", "HTML", "CSS", "React", "API", "CSS"],
-    image: "https://picsum.photos/400/250?random=3",
-    link: "#",
-    repo: "https://github.com/username/weather-app",
-    date: "2023-03-01",
-  },
-  {
-    title: "Weather App",
-    description: "A real-time weather app using OpenWeather API.",
-    tech: ["Javascript", "HTML", "CSS", "React"],
-    image: "https://picsum.photos/400/250?random=3",
-    link: "#",
-    repo: "https://github.com/username/weather-app",
-    date: "2023-03-01",
-  },
-];
+import { projects } from "../data/projects";
 
 export default function Projects() {
   return (
@@ -79,6 +44,7 @@ export default function Projects() {
           >
             <a
               href={project.link}
+              target="_blank" rel="noopener noreferrer"
               className="text-blue-400 hover:underline text-sm"
             >
               <img
@@ -96,12 +62,12 @@ export default function Projects() {
               </div>
               <p className="text-sm text-gray-400">{project.description}</p>
               <div className="flex gap-4">
-                <a href={project.link}>
+                <a href={project.link} target="_blank" rel="noopener noreferrer">
                   <button className="flex gap-2 items-center  hover:text-white hover:border-white w-full h-full border text-green-500 border-green-500 py-1 px-2">
                     <FaEye /> View
                   </button>
                 </a>
-                <a href={project.repo}>
+                <a href={project.repo} target="_blank" rel="noopener noreferrer">
                   <button className="flex gap-2 items-center hover:text-white hover:border-white  w-full h-full border text-green-500 border-green-500 py-1 px-2">
                     <FaGithubAlt /> Github
                   </button>
@@ -119,6 +85,9 @@ export default function Projects() {
                       break;
                     case "HTML":
                       Icon = SiHtml5;
+                      break;
+                    case "EJS":
+                      Icon = SiEjs;
                       break;
                     case "Node":
                       Icon = SiNodedotjs;
@@ -140,6 +109,9 @@ export default function Projects() {
                       break;
                     case "Framer Motion":
                       Icon = SiFramer; // Replace with the appropriate Vite icon if available
+                      break;
+                    case "Godot":
+                      Icon = SiGodotengine; // Replace with the appropriate Vite icon if available
                       break;
                     default:
                       Icon = null;

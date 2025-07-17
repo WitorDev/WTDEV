@@ -11,8 +11,8 @@ function App() {
       <Navbar />
       <Header />
       <About />
-      <Tech />
       <Projects />
+      <Tech />
       <Contact />
     </>
   )

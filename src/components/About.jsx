@@ -10,13 +10,13 @@ export default function About() {
       </div>
       <div className="flex flex-col mx-10 border-t-2 px-4 mb-20 border-green-500 h-full pt-5 backdrop-blur-xl bg-black/60">
         <div className="flex flex-col items-center sm:items-start justify-center sm:justify-start text-center sm:text-left sm:flex-row gap-4 mb-4">
-          <div className="overflow-hidden w-20">
+          {/* <div className="overflow-hidden w-20">
             <img
               className="object-cover"
               src="https://picsum.photos/200"
               alt="Dev Photo"
             />
-          </div>
+          </div> */}
           <div className="flex flex-col gap-2 justify-center">
             <h1 className="text-4xl">Witor Tenã</h1>
             <h2 className="text-xl text-gray-400">Londrina, Paraná, Brasil</h2>

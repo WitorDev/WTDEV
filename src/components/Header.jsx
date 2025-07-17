@@ -8,10 +8,10 @@ export default function Header() {
       <div className="flex flex-col items-center sm:items-start gap-2 my-50 m-6 mx-10 sm:ml-10 lg:mx-6 text-center sm:text-left">
         <h1 className="text-8xl font-bold">Witor Tenã</h1>
         <h1 className="w-fit mb-10 text-xl lg:max-w-2/3 border-l-white border-l-5 pl-2">
-          Professional Problem Solver
+          Excellent Problem Solver
         </h1>
         <h1 className="text-4xl lg:max-w-2/3 mb-10">
-          Providing intelligent solutions to intelligent people
+          Computer Science Student | Full Stack Developer
         </h1>
         <div className="flex flex-col items-center sm:items-start sm:flex-row gap-6 w-fit">
           <Link to="contact" smooth={true} duration={700}>
@@ -23,14 +23,15 @@ export default function Header() {
             </button>
           </Link>
           <div className="max-w-70 w-full flex flex-col gap-2">
-            <div className="flex justify-around sm:justify-start w-full text-green-400 text-2xl">
+            {/* <div className="flex justify-around sm:justify-start w-full text-green-400 text-2xl">
               <FaRegStar />
               <FaRegStar />
               <FaRegStar />
               <FaRegStar />
-            </div>
-            <h1 className="w-full font-serif">
-              "Excelent work from an excelent professional..."
+            </div> */}
+            <h1 className="w-full font-serif italic text-gray-400">
+              {/* Placeholder for testimonial */}
+              Looking for new opportunities and collaborations!
             </h1>
           </div>
         </div>

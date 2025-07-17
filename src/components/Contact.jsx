@@ -83,9 +83,30 @@ export default function Contact() {
       </div>
       <div className="m-10 p-10 border-l border-l-green-500 bg-black/60 backdrop-blur-xl">
         <div className="flex gap-10">
-          <SiGithub size={50} className="hover:text-green-500" />
-          <SiWhatsapp size={50} className="hover:text-green-500" />
-          <SiGmail size={50} className="hover:text-green-500" />
+          <a
+            href="https://github.com/witorDev"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <SiGithub size={50} className="hover:text-green-500" />
+          </a>
+          <a
+            href="https://wa.me/5543984138592"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+          >
+            <SiWhatsapp size={50} className="hover:text-green-500" />
+          </a>
+          <a
+            href="mailto:witortena@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Gmail"
+          >
+            <SiGmail size={50} className="hover:text-green-500" />
+          </a>
         </div>
       </div>
     </section>
