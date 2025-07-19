@@ -11,6 +11,7 @@ import {
   SiHtml5,
   SiCss3,
   SiNodedotjs,
+  SiThreedotjs,
 } from "react-icons/si";
 
 // Import images from assets folder
@@ -23,6 +24,9 @@ import nodeImage from "../assets/mongodb.png";
 import expressImage from "../assets/mongodb.png";
 import mongodbImage from "../assets/mongodb.png";
 import mongooseImage from "../assets/mongodb.png";
+import barrelImage from "../assets/barrelOrganization.png";
+import unifilImage from "../assets/unifilPortfolio.png";
+
 
 export default function Tech() {
   const [techActive, setTechActive] = useState(0);
@@ -77,9 +81,9 @@ export default function Tech() {
       techTitle = "Tailwind CSS";
       techParagraph =
         "Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces.";
-      examplePhoto = tailwindImage;
-      link = "https://witordev.github.io/Blog-preview-card/";
-      repository = "https://github.com/witordev/Blog-preview-card";
+      examplePhoto = barrelImage;
+      link = "https://barrelorganization.netlify.app/home";
+      repository = "https://github.com/WitorDev/barrel_org";
       break;
     case 6:
       techTitle = "Node.js";
@@ -93,25 +97,25 @@ export default function Tech() {
       techTitle = "Express";
       techParagraph =
         "Express is a minimal and flexible Node.js web application framework that provides a robust set of features.";
-      examplePhoto = expressImage;
-      link = "https://genesisblog.onrender.com/";
-      repository = "https://github.com/witordev/genesisblog";
+      examplePhoto = unifilImage;
+      link = "https://portfolio-unifil.onrender.com/";
+      repository = "https://github.com/witortenadev/Portfolio-Unifil";
       break;
     case 8:
       techTitle = "MongoDB";
       techParagraph =
         "MongoDB is a document-oriented NoSQL database used for high volume data storage.";
-      examplePhoto = mongodbImage;
-      link = "https://genesisblog.onrender.com/";
-      repository = "https://github.com/witordev/genesisblog";
+      // examplePhoto = mongodbImage;
+      // link = "https://genesisblog.onrender.com/";
+      // repository = "https://github.com/witordev/genesisblog";
       break;
     case 9:
       techTitle = "Mongoose";
       techParagraph =
         "Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js.";
-      examplePhoto = mongooseImage;
-      link = "https://genesisblog.onrender.com/";
-      repository = "https://github.com/witordev/genesisblog";
+      // examplePhoto = mongooseImage;
+      // link = "https://genesisblog.onrender.com/";
+      // repository = "https://github.com/witordev/genesisblog";
       break;
   }
 
@@ -227,7 +231,9 @@ export default function Tech() {
                 </a>
               )}
             </div>
-            <div className="flex items-center justify-between gap-5 px-5 p-2 border-t text-lg font-serif bg-green-300/30 backdrop-blur-xl w-full h-full">
+            {examplePhoto && (
+              <>
+              <div className="flex items-center justify-between gap-5 px-5 p-2 border-t text-lg font-serif bg-green-300/30 backdrop-blur-xl w-full h-full">
               <p>Practical Application</p>
               <div className="flex gap-5">
                 <a href={repository} target="_blank">
@@ -252,6 +258,8 @@ export default function Tech() {
                 />
               </a>
             </div>
+            </>
+            )}
             <div className="flex gap-5 mt-5 flex-wrap">
               {techActive === 0 && (
                 <a
@@ -358,6 +366,15 @@ export default function Tech() {
               )}
               {techActive === 4 && (
                 <a
+                  href="https://r3f.docs.pmnd.rs/getting-started/introduction"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SiThreedotjs size={50} className="bg-white p-2 text-black" />
+                </a>
+              )}
+              {techActive === 4 && (
+                <a
                   href="https://developer.mozilla.org/en-US/docs/Web/HTML"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -396,6 +413,33 @@ export default function Tech() {
                 </a>
               )}
 
+            {techActive === 5 && (
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SiHtml5 size={50} className="bg-white p-2 text-black" />
+                </a>
+              )}
+              {techActive === 5 && (
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SiCss3 size={50} className="bg-white p-2 text-black" />
+                </a>
+              )}
+              {techActive === 5 && (
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SiJavascript size={50} className="bg-white p-2 text-black" />
+                </a>
+              )}
               {techActive === 5 && (
                 <a
                   href="https://tailwindcss.com/"
@@ -406,6 +450,15 @@ export default function Tech() {
                     size={50}
                     className="bg-white p-2 text-black"
                   />
+                </a>
+              )}
+              {techActive === 5 && (
+                <a
+                  href="https://reactjs.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SiReact size={50} className="bg-white p-2 text-black" />
                 </a>
               )}
 
@@ -496,6 +549,33 @@ export default function Tech() {
 
               {techActive === 7 && (
                 <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SiHtml5 size={50} className="bg-white p-2 text-black" />
+                </a>
+              )}
+              {techActive === 7 && (
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SiCss3 size={50} className="bg-white p-2 text-black" />
+                </a>
+              )}
+              {techActive === 7 && (
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SiJavascript size={50} className="bg-white p-2 text-black" />
+                </a>
+              )}
+              {techActive === 7 && (
+                <a
                   href="https://expressjs.com/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -503,6 +583,8 @@ export default function Tech() {
                   <SiExpress size={50} className="bg-white p-2 text-black" />
                 </a>
               )}
+
+
               {techActive === 8 && (
                 <a
                   href="https://www.mongodb.com/"
